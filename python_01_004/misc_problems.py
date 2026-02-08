@@ -49,7 +49,7 @@ def average_of() -> float:
     return sum_of/count
 
 
-# needs ammendment
+#                           Needs ammendment
 
 # def greater_than()-> float:
 #     num1: float = float(input("Enter your first number: "))

@@ -107,6 +107,8 @@ def main():
 
 
 if __name__ =="__main__":
+    
+    # Something is incorrectly implemented here: not the standard way of code writing. 
     count =0
     while(count<=4):
         print()

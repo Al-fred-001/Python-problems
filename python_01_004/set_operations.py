@@ -47,11 +47,14 @@ def main():
     list_01 = [1,2,3,4,5,6]
     list_02 = [2,3,4,78,9]
 
-    # testing = intersection(list_01, list_02)
-    # testing = union(list_01,list_02)
-    # testing = difference(list_01, list_02)
-    # testing = symmetric_difference(list_01,list_02)
-    # print(testing)
+    testing0 = intersection(list_01, list_02)
+    testing1 = union(list_01,list_02)
+    testing2 = difference(list_01, list_02)
+    testing3 = symmetric_difference(list_01,list_02)
+    print(testing0)
+    print(testing1)
+    print(testing2)
+    print(testing3)
 
 
 if __name__ =="__main__":

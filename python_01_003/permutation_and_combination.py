@@ -21,8 +21,8 @@ def calc_combination (n: int, r: int) -> int:
     return result
     
 
-# for testing purposes only. 
-if __name__ =="__main__":
+
+def main()->None:
     print()
     print("--Initializing--")
     print()
@@ -36,3 +36,7 @@ if __name__ =="__main__":
     print(f"The required combination: C({user_input_n},{user_input_r}) = {result_com}")
     print()
     print("--Code execution completed--\n")
+
+# for testing purposes only. 
+if __name__ =="__main__":
+    main()

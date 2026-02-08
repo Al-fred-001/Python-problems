@@ -44,16 +44,12 @@ def shuffle_list(list_of_characters: list)-> list:
 
     return shuffled_output
 
-# list_01: list = ['a', 'b','c',  1, 2, 3, 4, '@', '#', '$']
-
-# result = shuffle_list(list_01)
-# print(result)
 
 # handles a standard that is set while generating password.
 def get_standardized_amount(n):
 
+    #descriptive naming but pretty lenghty names :(
     quantity_of_small_letters = int(n/2)
-
     qty_of_capital_letters = int((n)/6)
     qty_of_digits = qty_of_capital_letters
     total_characters = quantity_of_small_letters + qty_of_capital_letters + qty_of_digits
@@ -87,8 +83,6 @@ def get_random_characters():
 
         if (length_of_password>=8 and length_of_password<=40):
 
-            # while (len(characters)< length_of_password):
-                
                 for i in range (0, a):
                     random_letter = random.randint(0,25)
                     characters.append(small_letters[random_letter])
@@ -106,15 +100,11 @@ def get_random_characters():
                     characters.append(symbols[random_symbol])
     return characters
 
-                # for i in range (0, )
-
-
-# print(get_standardized_amount(50))
 
 
 
-# the function to be called for password generation
 
+# The function to be called for password generation
 def password_generator()-> str:
     choosen_characters = get_random_characters()
     shuffled_characters = shuffle_list(choosen_characters)
@@ -122,12 +112,11 @@ def password_generator()-> str:
     return generated_password
 
 password_generated = password_generator()
-# print(password)
-# print(len(password))
 
-# Creating/ appending our generated passwords to a specified file.
 
 now = datetime.datetime.now() # for date and time
+
+
 user_comment = input("\nWhat should the password be stored as? (Default = Newly generated password) \nYour comment on password: ")
 default = "Newly generated password: "
 password_for = user_comment if (user_comment !='') else default
